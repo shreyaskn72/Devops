@@ -1,0 +1,16 @@
+docker compose build   --> image build
+
+
+docker compose up      --> container start
+docker compose up -d
+docker logs a52bc2cf17f3 -f --tail 10
+
+
+8aeac6b47e3d
+
+241a66ca780b
+
+
+local -> dev (image) -> beta (image2)
+
+client dev(image)
