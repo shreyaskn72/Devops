@@ -5,6 +5,7 @@ docker compose up      --> container start
 docker compose up -d
 docker logs a52bc2cf17f3 -f --tail 10
 
+docker image rm ffd09fce1dc3   --> Delete specific image from image id
 
 8aeac6b47e3d
 
