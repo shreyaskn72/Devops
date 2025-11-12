@@ -1,3 +1,5 @@
+Local docker commands:
+
 docker compose build   --> image build
 
 
@@ -14,4 +16,15 @@ docker image rm ffd09fce1dc3   --> Delete specific image from image id
 
 local -> dev (image) -> beta (image2)
 
+
 client dev(image)
+
+
+GHCR Docker:
+
+echo $ghcr_pat| docker login ghcr.io -u shreyaskn72 --password-stdin
+docker login ghcr.io
+
+docker build . -t ghcr.io/shreyaskn72/hello-world:latest
+docker push -t ghcr.io/shreyaskn72/hello-world:latest
+docker run -t ghcr.io/shreyaskn72/hello-world:latest
