@@ -26,5 +26,6 @@ echo $ghcr_pat| docker login ghcr.io -u shreyaskn72 --password-stdin
 docker login ghcr.io
 
 docker build . -t ghcr.io/shreyaskn72/hello-world:latest
-docker push -t ghcr.io/shreyaskn72/hello-world:latest
-docker run -t ghcr.io/shreyaskn72/hello-world:latest
+docker push ghcr.io/shreyaskn72/hello-world:latest
+docker run ghcr.io/shreyaskn72/hello-world:latest
+
